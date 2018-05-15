@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="WPF.MVVM.Products.ProductListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase" 
+             xmlns:products="clr-namespace:WPF.MVVM.Products"
+             Background="Tan"
+             mc:Ignorable="d"
+             d:DesignHeight="200" 
+             d:DesignWidth="600">
+
+    <UserControl.Resources>
+        <CollectionViewSource x:Key="SortedItems" 
+                              Source="{Binding Items}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="Name" Direction="Ascending"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+
+    <ItemsControl x:Name="ProductsControl"
+                  ItemsSource="{Binding Source={StaticResource SortedItems}}"
+                  Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualHeight}"
+                  MaxHeight="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualHeight}"
+                  PreviewMouseDown="ProductsControl_PreviewMouseDown"
+                  ScrollViewer.CanContentScroll="True"
+                  VirtualizingStackPanel.IsVirtualizing="True" 
+                  VirtualizingStackPanel.VirtualizationMode="Recycling" 
+                  Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualWidth}">
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <VirtualizingStackPanel />
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <Border BorderBrush="LightGray" BorderThickness="0, 0, 0, 1">
+                    <products:ProductListItem DataContext="{Binding}" />
+                </Border>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+        <ItemsControl.Template>
+            <ControlTemplate>
+                <ScrollViewer Focusable="False">
+                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+                </ScrollViewer>
+            </ControlTemplate>
+        </ItemsControl.Template>
+    </ItemsControl>
+
+</UserControl>

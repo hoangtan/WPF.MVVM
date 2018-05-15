@@ -1,0 +1,17 @@
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\WPF.MVVM.Test.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\WPF.MVVM.Test.pdb
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\WPF.MVVM.exe
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\WPF.MVVM.pdb
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\WPF.MVVM.exe.config
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\obj\Debug\WPF.MVVM.Test.csprojAssemblyReference.cache
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\obj\Debug\WPF.MVVM.Test.csproj.CoreCompileInputs.cache
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\obj\Debug\WPF.MVVM.Test.csproj.CopyComplete
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\obj\Debug\WPF.MVVM.Test.dll
+D:\TN\WPFRecruitmentAssessment - Copy\WPF.MVVM.Test\obj\Debug\WPF.MVVM.Test.pdb

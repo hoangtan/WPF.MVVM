@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WPF.MVVM.Products.ProductSearchComboBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:products="clr-namespace:WPF.MVVM.Products"
+             mc:Ignorable="d"
+             d:DesignWidth="280" MaxWidth="300">
+    <Grid MaxHeight="300"
+          MinWidth="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <products:ProductSearchView x:Name="ProductSearchControl" 
+                                    Grid.Row="0" />
+        <products:ProductListView x:Name="ProductListControl" 
+                                  Grid.Row="1" 
+                                  MaxHeight="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualHeight}" 
+                                  MaxWidth="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualWidth}" />
+    </Grid>
+</UserControl>
